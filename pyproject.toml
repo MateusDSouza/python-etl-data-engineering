@@ -1,0 +1,41 @@
+[tool.poetry]
+name = "python-etl-data-engineering"
+version = "0.1.0"
+description = "This repository contains the project used to improve my Data Engineering skills and python development."
+authors = ["Mateus De Souza <desouza.mateus1996@gmail.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.11"
+pyspark = "^3.5.2"
+configparser = "^7.1.0"
+findspark = "^2.0.1"
+black = "^24.8.0"
+pandas = "^2.2.3"
+pyarrow = "^17.0.0"
+fastparquet = "^2024.5.0"
+pre-commit = "^3.8.0"
+pytest = "^8.3.3"
+
+[tool.poetry.group.test.dependencies]
+python = "^3.11"
+pyspark = "^3.5.2"
+configparser = "^7.1.0"
+findspark = "^2.0.1"
+black = "^24.8.0"
+pandas = "^2.2.3"
+pyarrow = "^17.0.0"
+fastparquet = "^2024.5.0"
+pre-commit = "^3.8.0"
+pytest = "^8.3.3"
+
+[tool.poetry.group.dev.dependencies]
+pyspark = "^3.5.2"
+configparser = "^7.1.0"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.pytest.ini_options]
+pythonpath = ["src"]

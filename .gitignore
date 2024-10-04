@@ -1,0 +1,18 @@
+# Ignore data folders
+sample_data/
+output_data/
+
+# Ignore cache folders
+.mypy_cache/
+pytest_cache/
+__pycache__/
+
+# Ignore specific files and IDE configurations
+notebook/test_data
+.idea/
+.vscode/
+
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
